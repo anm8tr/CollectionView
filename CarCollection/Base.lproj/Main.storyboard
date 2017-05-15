@@ -1,26 +1,105 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IuZ-h0-DWg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Car Inventory-->
+        <scene sceneID="08M-DM-VRc">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <collectionViewController id="TBi-sL-Aev" customClass="InventoryCollectionViewController" customModule="CarCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Y0j-ji-mib">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="6" id="G9e-Iz-kOV">
+                            <size key="itemSize" width="150" height="170"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellCar" id="D5h-1e-Ila" customClass="InventoryCollectionViewCell" customModule="CarCollection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="170"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2014AcuraILX" translatesAutoresizingMaskIntoConstraints="NO" id="aBe-LV-8gd">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="102"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="carModel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoH-Y0-4mE">
+                                            <rect key="frame" x="8" y="117" width="134" height="16"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="carPrice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiV-m9-h8f">
+                                            <rect key="frame" x="8" y="143" width="134" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="WoH-Y0-4mE" firstAttribute="top" secondItem="aBe-LV-8gd" secondAttribute="bottom" constant="15" id="2e5-yt-CnP"/>
+                                    <constraint firstAttribute="trailing" secondItem="aBe-LV-8gd" secondAttribute="trailing" id="G8f-HJ-9hj"/>
+                                    <constraint firstItem="aBe-LV-8gd" firstAttribute="top" secondItem="D5h-1e-Ila" secondAttribute="top" id="GnE-j4-EAD"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="WoH-Y0-4mE" secondAttribute="trailing" id="Zva-R9-jri"/>
+                                    <constraint firstItem="aBe-LV-8gd" firstAttribute="height" secondItem="D5h-1e-Ila" secondAttribute="height" multiplier="1.8:3" id="dNE-yB-D6U"/>
+                                    <constraint firstItem="WoH-Y0-4mE" firstAttribute="leading" secondItem="D5h-1e-Ila" secondAttribute="leadingMargin" id="mRu-li-lUn"/>
+                                    <constraint firstItem="oiV-m9-h8f" firstAttribute="leading" secondItem="WoH-Y0-4mE" secondAttribute="leading" id="ogM-fm-avW"/>
+                                    <constraint firstItem="oiV-m9-h8f" firstAttribute="top" secondItem="WoH-Y0-4mE" secondAttribute="bottom" constant="10" id="ots-vc-ebC"/>
+                                    <constraint firstItem="aBe-LV-8gd" firstAttribute="leading" secondItem="D5h-1e-Ila" secondAttribute="leading" id="sng-zZ-isx"/>
+                                    <constraint firstItem="oiV-m9-h8f" firstAttribute="trailing" secondItem="WoH-Y0-4mE" secondAttribute="trailing" id="zFR-R7-TJl"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="carImageView" destination="aBe-LV-8gd" id="BcM-Gv-JcZ"/>
+                                    <outlet property="carModelLabel" destination="WoH-Y0-4mE" id="xQ5-qD-xGR"/>
+                                    <outlet property="carPriceLabel" destination="oiV-m9-h8f" id="Dds-gn-DEB"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="TBi-sL-Aev" id="6Rq-kd-a1o"/>
+                            <outlet property="delegate" destination="TBi-sL-Aev" id="tcx-yr-iaE"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Car Inventory" id="r61-cC-bc1"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOw-4y-DjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1095.2" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="g4x-Y0-1Ve">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IuZ-h0-DWg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ObT-g0-yxo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TBi-sL-Aev" kind="relationship" relationship="rootViewController" id="mvG-uR-bPv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUn-ev-ls2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="2014AcuraILX" width="900" height="600"/>
+    </resources>
 </document>

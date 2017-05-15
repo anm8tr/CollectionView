@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		553E42061EC95D6600211EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E42051EC95D6600211EE7 /* AppDelegate.swift */; };
-		553E42081EC95D6600211EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E42071EC95D6600211EE7 /* ViewController.swift */; };
 		553E420B1EC95D6600211EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E42091EC95D6600211EE7 /* Main.storyboard */; };
 		553E420D1EC95D6600211EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553E420C1EC95D6600211EE7 /* Assets.xcassets */; };
 		553E42101EC95D6600211EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E420E1EC95D6600211EE7 /* LaunchScreen.storyboard */; };
+		553E421A1EC96B1600211EE7 /* InventoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E42191EC96B1600211EE7 /* InventoryCollectionViewController.swift */; };
+		553E421C1EC96B7A00211EE7 /* InventoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E421B1EC96B7A00211EE7 /* InventoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		553E42021EC95D6600211EE7 /* CarCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		553E42051EC95D6600211EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		553E42071EC95D6600211EE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		553E420A1EC95D6600211EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		553E420C1EC95D6600211EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		553E420F1EC95D6600211EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		553E42111EC95D6600211EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553E42191EC96B1600211EE7 /* InventoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryCollectionViewController.swift; sourceTree = "<group>"; };
+		553E421B1EC96B7A00211EE7 /* InventoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				553E42051EC95D6600211EE7 /* AppDelegate.swift */,
-				553E42071EC95D6600211EE7 /* ViewController.swift */,
 				553E42091EC95D6600211EE7 /* Main.storyboard */,
 				553E420C1EC95D6600211EE7 /* Assets.xcassets */,
 				553E420E1EC95D6600211EE7 /* LaunchScreen.storyboard */,
 				553E42111EC95D6600211EE7 /* Info.plist */,
+				553E42191EC96B1600211EE7 /* InventoryCollectionViewController.swift */,
+				553E421B1EC96B7A00211EE7 /* InventoryCollectionViewCell.swift */,
 			);
 			path = CarCollection;
 			sourceTree = "<group>";
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553E42081EC95D6600211EE7 /* ViewController.swift in Sources */,
+				553E421C1EC96B7A00211EE7 /* InventoryCollectionViewCell.swift in Sources */,
 				553E42061EC95D6600211EE7 /* AppDelegate.swift in Sources */,
+				553E421A1EC96B1600211EE7 /* InventoryCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
