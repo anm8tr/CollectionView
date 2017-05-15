@@ -13,6 +13,7 @@
 		553E42101EC95D6600211EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E420E1EC95D6600211EE7 /* LaunchScreen.storyboard */; };
 		553E421A1EC96B1600211EE7 /* InventoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E42191EC96B1600211EE7 /* InventoryCollectionViewController.swift */; };
 		553E421C1EC96B7A00211EE7 /* InventoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E421B1EC96B7A00211EE7 /* InventoryCollectionViewCell.swift */; };
+		553E421E1EC97A9200211EE7 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E421D1EC97A9200211EE7 /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		553E42111EC95D6600211EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553E42191EC96B1600211EE7 /* InventoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryCollectionViewController.swift; sourceTree = "<group>"; };
 		553E421B1EC96B7A00211EE7 /* InventoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		553E421D1EC97A9200211EE7 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				553E42111EC95D6600211EE7 /* Info.plist */,
 				553E42191EC96B1600211EE7 /* InventoryCollectionViewController.swift */,
 				553E421B1EC96B7A00211EE7 /* InventoryCollectionViewCell.swift */,
+				553E421D1EC97A9200211EE7 /* Double+Extension.swift */,
 			);
 			path = CarCollection;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553E421E1EC97A9200211EE7 /* Double+Extension.swift in Sources */,
 				553E421C1EC96B7A00211EE7 /* InventoryCollectionViewCell.swift in Sources */,
 				553E42061EC95D6600211EE7 /* AppDelegate.swift in Sources */,
 				553E421A1EC96B1600211EE7 /* InventoryCollectionViewController.swift in Sources */,

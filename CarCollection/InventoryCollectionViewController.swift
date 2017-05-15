@@ -69,13 +69,17 @@ class InventoryCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellCar", for: indexPath) as! InventoryCollectionViewCell
+        // Edit border style
+        cell.layer.borderWidth = 0.5
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.cornerRadius = 5
         
         let car = cars[indexPath.row]
     
         // Configure the cell
         cell.carImageView.image = UIImage(named: car.image)
         cell.carModelLabel.text = car.model
-        cell.carPriceLabel.text = String(car.price)
+        cell.carPriceLabel.text = car.price.currencyFormatter
         
         return cell
     }
